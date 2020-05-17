@@ -9,10 +9,11 @@ They'd like a data engineer to create a Postgres database with tables designed t
 
 
 ## Project Description
-In this project, we collect the data for user activity from a music streaming app called **Sparkify** in `JSON` file format.
-<br>We creat a relational database to store the data using `PostgreSQL`. 
-<br>We define **Fact** and **Dimension** tables for a **Star Schema** with a particular analytic focus. 
-<br>We also build an **ETL Pipeline** to understand what songs users are listening to and to transfer the date into these tables using Python and SQL.
+In this project:
+- we collect the data for user activity from a music streaming app called **Sparkify** in `JSON` file format.
+- We creat a relational database to store the data using `PostgreSQL`. 
+- We define **Fact** and **Dimension** tables for a **Star Schema** with a particular analytic focus. 
+- We also build an **ETL Pipeline** to understand what songs users are listening to and to transfer the date into these tables using Python and SQL.
 <br><br>
 
 
