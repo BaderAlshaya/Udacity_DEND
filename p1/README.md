@@ -13,7 +13,8 @@ In this project:
 - We collect the data for user activity from a music streaming app called **Sparkify** in `JSON` file format.
 - We creat a **Relational Database** to store the data using `PostgreSQL`. 
 - We define **Fact** and **Dimension** tables for a **Star Schema** with a particular analytic focus. 
-- We also build an **ETL Pipeline** to understand what songs users are listening to and to transfer the date into these tables using `Python` and `SQL`.
+- We build an **ETL Pipeline** to transfer the date into these tables using `Python` and `SQL`.
+- We use **ETL Pipeline** to optimize queries and understand what songs users are listening to.
 <br><br>
 
 
