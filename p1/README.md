@@ -17,6 +17,7 @@ They'd like us to create a Postgres database with tables designed to optimize qu
 - We optimize queries and understand what songs users are listening to.
 - We finally test the database by comparing their given expected results with our own query results.
 
+
 **Data Examples:**
 - Song Dataset: 
 > Each song file is in `JSON` file format and contains metadata about a song and the artist of that song. The files are partitioned by the first three letters of each song's track ID. 
