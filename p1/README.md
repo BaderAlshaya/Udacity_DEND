@@ -20,9 +20,9 @@ They'd like us to create a Postgres database with tables designed to optimize qu
 
 **Data Examples:**
 - Song Dataset: 
-> Each song file is in `JSON` file format and contains metadata about a song and the artist of that song. The files are partitioned by the first three letters of each song's track ID. 
-> For instance: `TRAABJL12903CDCF1A.json` looks like:
+Each song file is in `JSON` file format and contains metadata about a song and the artist of that song. The files are partitioned by the first three letters of each song's track ID. 
 
+For instance: `TRAABJL12903CDCF1A.json` looks like:
     {"num_songs": 1, 
     "artist_id": "ARJIE2Y1187B994AB7", 
     "artist_latitude": null, 
