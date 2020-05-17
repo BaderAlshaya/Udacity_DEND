@@ -22,7 +22,7 @@ They'd like us to create a Postgres database with tables designed to optimize qu
 - Song Dataset: 
 
 Each song file is in `JSON` file format and contains metadata about a song and the artist of that song. The files are partitioned by the first three letters of each song's track ID.
-<br>For instance: `song_data/A/A/B/TRAABJL12903CDCF1A.json` looks like:
+<br>*For instance:* `song_data/A/A/B/TRAABJL12903CDCF1A.json` looks like:
 
     {"num_songs": 1, 
     "artist_id": "ARJIE2Y1187B994AB7", 
