@@ -9,13 +9,22 @@ They'd like us to create a Postgres database with tables designed to optimize qu
 
 
 ## Project Description
-In this project:
+**Requirements:**
 - We collect the data for user activity from a music streaming app called **Sparkify** in `JSON` file format.
 - We creat a **Relational Database** to store the data using `PostgreSQL`. 
 - We define **Fact** and **Dimension** tables for a **Star Schema** with a particular analytic focus. 
 - We build an **ETL Pipeline** to transfer the date into these tables using `Python` and `SQL`.
 - We optimize queries and understand what songs users are listening to.
 - We finally test the database by comparing their given expected results with our own query results.
+
+**Data Examples:**
+- Song Dataset (JSON): 
+> Each song file is in JSON file format and contains metadata about a song and the artist of that song. The files are partitioned by the first three letters of each song's track ID. 
+> For instance: `TRAABJL12903CDCF1A.json` looks like:
+
+    {"num_songs": 1, "artist_id": "ARJIE2Y1187B994AB7", "artist_latitude": null, "artist_longitude": null, "artist_location": "", "artist_name": "Line Renaud", "song_id": "SOUPIRU12A6D4FA1E1", "title": "Der Kleine Dompfaff", "duration": 152.92036, "year": 0}
+
+- Log Dataset (JSON):
 <br><br>
 
 
