@@ -1,7 +1,7 @@
 # Project 1: Data Modeling with Postgres
 In this project, we collect data for user activity from a music streaming app called **Sparkify**. 
-We creat a PostgreSQL (relational database) and define **Fact** and **Dimension** tables to store the collected data. 
-We also use **ETL Pipeline** to optimize queries and understand what songs users are listening to.
+<br>We creat a PostgreSQL (relational database) and define **Fact** and **Dimension** tables to store the collected data. 
+<br>We also use **ETL Pipeline** to optimize queries and understand what songs users are listening to.
 
 - Discuss the purpose of this database in the context of the startup, Sparkify, and their analytical goals.
 - State and justify your database schema design and ETL pipeline.
