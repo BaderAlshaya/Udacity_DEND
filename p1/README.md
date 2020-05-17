@@ -16,7 +16,7 @@ They'd like us to create a Postgres database with tables designed to optimize qu
 - We build an **ETL Pipeline** to transfer the date into these tables using `Python` and `SQL`.
 - We optimize queries and understand what songs users are listening to.
 - We finally test the database by comparing their given expected results with our own query results.
-
+<br>
 
 **Data Examples:**
 - Song Dataset: 
