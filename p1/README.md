@@ -86,10 +86,13 @@ To build the project:
 
 
 ## Run
+To run the project:
+- Run python3 create_tables.py 
+- Run python3 etl.py
 <br><br>
 
 
-## Test
+## Test Result
 <br><br>
 
 
