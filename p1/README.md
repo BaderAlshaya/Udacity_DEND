@@ -20,7 +20,7 @@ They'd like us to create a Postgres database with tables designed to optimize qu
 
 
 **Files:**
-- (Python) `create_tables.py`: Set up the `sparkifydb` database and creates the tables.
+- (Python) **`create_tables.py`**: Set up the `sparkifydb` database and creates the tables.
 - (Python) `sql_queries.py`: Specify insertion query template and initialize SQL queries to create and drope tables.
 - (Python) `etl.py`: Read and transfer song_data and log_data.
 - (Jupyter Notebook) `etl.ipynb`: Analyse dataset before loading it to the database.
