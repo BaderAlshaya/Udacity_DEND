@@ -25,6 +25,8 @@ They'd like us to create a Postgres database with tables designed to optimize qu
 - `etl.py`: (Python) Read and transfer song_data and log_data.
 - `etl.ipynb`: (Jupyter Notebook) Analyse dataset before loading it to the database.
 - `test.ipynb`: (Jupyter Notebook) Test loaded data against expected data to validate the results.
+<br>
+
 
 **Data Examples:**
 - Song Dataset: 
