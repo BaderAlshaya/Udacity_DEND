@@ -85,8 +85,7 @@ To build the project:
 - Install Postgres.App 12 (or above).
 - Open the terminal and run the following commands to run the databases locally:
     1. Run the PostgresSQL shell: `psql`
-    2. Create a database owner and set the password:`CREATE ROLE student WITH LOGIN PASSWORD 'student' CREATEDB CREATEROLE;;`
-    CREATE ROLE student AUTHORIZATION student;
+    2. Create the database owner:`CREATE ROLE student WITH LOGIN PASSWORD 'student' CREATEDB CREATEROLE;`
     3. Quit the PostgresSQL shell: `\q`
     4. Create a student database: `createdb -O student -h 127.0.0.1 -e studentdb`
     5. Create a sparkify database: `createdb -O student -h 127.0.0.1 -e sparkifydb`
