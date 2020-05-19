@@ -84,11 +84,11 @@ To build the project:
 - Install all required packages and their specific versions using `pip3 install -r requirements.txt`.
 - Install Postgres.App 12 (or above).
 - Open the terminal and run the following commands to run the databases locally:
-    A. Run the PostgresSQL shell: `psql`
-    B. Create the database owner:`CREATE ROLE student WITH LOGIN PASSWORD 'student' CREATEDB CREATEROLE;`
-    C. Quit the PostgresSQL shell: `\q`
-    D. Create a student database: `createdb -O student -h 127.0.0.1 -e studentdb`
-    E. Create a sparkify database: `createdb -O student -h 127.0.0.1 -e sparkifydb`
+    * Run the PostgresSQL shell: `psql`
+    * Create the database owner:`CREATE ROLE student WITH LOGIN PASSWORD 'student' CREATEDB CREATEROLE;`
+    * Quit the PostgresSQL shell: `\q`
+    * Create a student database: `createdb -O student -h 127.0.0.1 -e studentdb`
+    * Create a sparkify database: `createdb -O student -h 127.0.0.1 -e sparkifydb`
 <br><br>
 
 
