@@ -61,7 +61,7 @@ CREATE TABLE IF NOT EXISTS times (
 
 
 # INSERT RECORDS
-songplay_table_insert = ("""
+song_plays_table_insert = ("""
 INSERT INTO song_plays 
 VALUES (DEFAULT, %s, %s, %s, %s, %s, %s, %s, %s)
 """)
@@ -73,13 +73,13 @@ ON CONFLICT (user_id) DO UPDATE SET
 level = EXCLUDED.level
 """)
 
-song_table_insert = ("""
+songs_table_insert = ("""
 INSERT INTO songs (song_id, title, artist_id, year, duration)
 VALUES (%s, %s, %s, %s, %s)
 ON CONFLICT (song_id) DO NOTHING                        
 """)
 
-artist_table_insert = ("""
+artists_table_insert = ("""
 INSERT INTO artists (artist_id, name, location, latitude, longitude)
 VALUES (%s, %s, %s, %s, %s)
 ON CONFLICT (artist_id) DO UPDATE SET
@@ -95,7 +95,7 @@ ON CONFLICT (start_time) DO NOTHING
 
 
 # FIND SONGS
-song_select = ("""
+songs_select = ("""
 SELECT song_id, artists.artist_id
 FROM songs JOIN artists ON songs.artist_id = artists.artist_id
 WHERE songs.title = %s
