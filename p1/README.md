@@ -79,7 +79,7 @@ This project transfer the data from two data sets, `song_data` and `log_data`, a
 - *Transform:* where the data gets transformed to it's logical data type.
 - *Load:* where the data gets loaded to the target database.
 
-**The design choosed for the database is the following Star Schema Design:**
+**The design for the database is the following Star Schema:**
 <p align="center"> 
     <img alt="Star Schema Design"
     src="https://github.com/BaderAlshaya/Udacity_DEND/blob/master/p1/assets/images/StarSchemaDesign.png"> 
