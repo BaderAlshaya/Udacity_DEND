@@ -84,7 +84,7 @@ To build the project:
 - Install all required packages and their specific versions using `pip3 install -r requirements.txt`.
 - Install postgres (PostgreSQL 12.3 or above).
 - Open the terminal and run the following commands to create and run the databases locally:
-    <br>&nbsp;  **1. Run the PostgresSQL shell:** `psql`
+    <br>&nbsp;        **1. Run the PostgresSQL shell:** `psql`
     <br>&nbsp;  **2. Create the database owner:** `CREATE ROLE student WITH LOGIN PASSWORD 'student' CREATEDB CREATEROLE;`
     <br>&nbsp;  **3. Quit the PostgresSQL shell:** `\q`
     <br>&nbsp;  **4. Create a default database:** `createdb -O student -h 127.0.0.1 -e studentdb`
