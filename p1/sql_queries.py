@@ -66,7 +66,7 @@ INSERT INTO song_plays
 VALUES (DEFAULT, %s, %s, %s, %s, %s, %s, %s, %s)
 """)
 
-user_table_insert = ("""
+users_table_insert = ("""
 INSERT INTO users (user_id, first_name, last_name, gender, level) 
 VALUES (%s, %s, %s, %s, %s)
 ON CONFLICT (user_id) DO UPDATE SET
@@ -88,7 +88,6 @@ latitude = EXCLUDED.latitude,
 longitude = EXCLUDED.longitude
 """)
 
-
 times_table_insert = ("""
 INSERT INTO times VALUES (%s, %s, %s, %s, %s, %s, %s)
 ON CONFLICT (start_time) DO NOTHING
@@ -107,17 +106,17 @@ AND songs.duration = %s
 
 # QUERY LISTS
 create_table_queries = [
-    song_plays_table_create, 
     users_table_create, 
-    songs_table_create, 
+    times_table_create,
     artists_table_create, 
-    times_table_create
+    songs_table_create, 
+    song_plays_table_create
 ]
 
 drop_table_queries = [
-    song_plays_table_drop,
     users_table_drop,
-    songs_table_drop,
+    times_table_drop,
     artists_table_drop,
-    times_table_drop
+    songs_table_drop,
+    song_plays_table_drop
 ]
