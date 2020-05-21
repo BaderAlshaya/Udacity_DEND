@@ -94,10 +94,10 @@ To build the project (Mac OS):
 - Install all required packages and their specific versions using `pip3 install -r requirements.txt`.
 - Install postgres (PostgreSQL 12.3 or above).
 - Open the terminal and run the following commands to create and run the databases locally:
-    <br&nbsp;&nbsp;&nbsp;**- Run the PostgresSQL shell:** `psql`
-    <br&nbsp;&nbsp;&nbsp;**- Create the database owner:** `CREATE ROLE student WITH LOGIN PASSWORD 'student' CREATEDB CREATEROLE;`
-    <br&nbsp;&nbsp;&nbsp;**- Quit the PostgresSQL shell:** `\q`
-    <br&nbsp;&nbsp;&nbsp;**- Create a default database:** `createdb -O student -h 127.0.0.1 -e studentdb`
+    <br>&nbsp;&nbsp;&nbsp;**- Run the PostgresSQL shell:** `psql`
+    <br>&nbsp;&nbsp;&nbsp;**- Create the database owner:** `CREATE ROLE student WITH LOGIN PASSWORD 'student' CREATEDB CREATEROLE;`
+    <br>&nbsp;&nbsp;&nbsp;**- Quit the PostgresSQL shell:** `\q`
+    <br>&nbsp;&nbsp;&nbsp;**- Create a default database:** `createdb -O student -h 127.0.0.1 -e studentdb`
 <br><br>
 
 
