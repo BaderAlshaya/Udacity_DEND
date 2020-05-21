@@ -20,12 +20,12 @@ They'd like us to create a Postgres database with tables designed to optimize qu
 
 
 **Files:**
-- (Python) **`create_tables.py`**: Set up the `sparkifydb` database and creates the tables.
-- (Python) **`sql_queries.py`**: Specify insertion query template and initialize SQL queries to create and drope tables.
-- (Python) **`etl.py`**: Read and transfer song_data and log_data.
-- (Jupyter Notebook) **`etl.ipynb`**: Analyse dataset before loading it to the database.
-- (Jupyter Notebook) **`test.ipynb`**: Test loaded data against expected data to validate the results.
 - (Text) **`requirements.txt`**: Populate project's required packages.
+- (Python) **`create_tables.py`**: Connect to the database and create the tables.
+- (Python) **`sql_queries.py`**: Sets the tables and the queries used for the ETL Pipline.
+- (Python) **`etl.py`**: Transfers the data from the JSON files to the target database.
+- (Jupyter Notebook) **`etl.ipynb`**: Analyse dataset before loading it to the database.
+- (Jupyter Notebook) **`test.ipynb`**: Test loaded data against expected data to validate the transformation.
 <br>
 
 
@@ -35,15 +35,15 @@ They'd like us to create a Postgres database with tables designed to optimize qu
 Each song file is in `JSON` file format and contains metadata about a song and the artist of that song. The files are partitioned by the first three letters of each song's track ID.
 <br>**For instance:** `song_data/A/A/B/TRAABJL12903CDCF1A.json` looks like:
 
-    {"num_songs": 1, 
-    "artist_id": "ARJIE2Y1187B994AB7", 
-    "artist_latitude": null, 
+    {"num_songs": 1,
+    "artist_id": "ARHHO3O1187B989413",
+    "artist_latitude": null,
     "artist_longitude": null,
-    "artist_location": "", 
-    "artist_name": "Line Renaud", 
-    "song_id": "SOUPIRU12A6D4FA1E1", 
-    "title": "Der Kleine Dompfaff", 
-    "duration": 152.92036, 
+    "artist_location": "",
+    "artist_name": "Bob Azzam",
+    "song_id": "SORAMLE12AB017C8B0",
+    "title": "Auguri Cha Cha",
+    "duration": 191.84281,
     "year": 0}
 
 - Log Dataset:
