@@ -7,16 +7,15 @@ from sql_queries import *
 
 def process_song_file(cur, filepath):
     # open song file
-    # this is how to open data file df = pd.read_json('write_JSONfile_path_here', lines=True)
     df = pd.read_json(filepath, lines=True)
 
     # insert song record
     song_data = df[['song_id', 
-                    'title', 
                     'artist_id', 
+                    'title', 
                     'year', 
                     'duration']].values[0]
-    cur.execute(song_table_insert, song_data)
+    cur.execute(songs_table_insert, song_data)
     
     # insert artist record
     artist_data = df[['artist_id',
@@ -38,15 +37,33 @@ def process_log_file(cur, filepath):
     t = pd.to_datetime(df['ts'], unit='ms')
     
     # insert time data records
-    time_data = 
-    column_labels = 
-    time_df = 
+    time_data = [df['ts'], 
+                 df['ts'].dt.hour,
+                 df['ts'].dt.day,
+                 df['ts'].dt.weekofyear,
+                 df['ts'].dt.month,
+                 df['ts'].dt.year,
+                 df['ts'].dt.weekday]
+    
+    column_labels = ['ts',
+                     'hour',
+                     'day',
+                     'week of year',
+                     'month',
+                     'year',
+                     'weekday']    
+    
+    time_df = pd.DataFrame.from_dict(dict(zip(column_labels, time_data)))
 
     for i, row in time_df.iterrows():
         cur.execute(time_table_insert, list(row))
 
     # load user table
-    user_df = 
+    user_df = df[['user_id',
+                  'first_name',
+                  'last_name',
+                  'gender',
+                  'level']]
 
     # insert user records
     for i, row in user_df.iterrows():
@@ -65,7 +82,15 @@ def process_log_file(cur, filepath):
             songid, artistid = None, None
 
         # insert songplay record
-        songplay_data = 
+        songplay_data = (row.user_id,
+                         songid,
+                         artistid,
+                         row.start_time,
+                         row.session_id,
+                         row.level,
+                         row.location,
+                         row.user_agent)
+
         cur.execute(songplay_table_insert, songplay_data)
 
 

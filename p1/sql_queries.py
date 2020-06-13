@@ -74,18 +74,15 @@ level = EXCLUDED.level
 """)
 
 songs_table_insert = ("""
-INSERT INTO songs (song_id, title, artist_id, year, duration)
+INSERT INTO songs (song_id, artist_id, title, year, duration)
 VALUES (%s, %s, %s, %s, %s)
-ON CONFLICT (song_id) DO NOTHING                        
+ON CONFLICT (song_id) DO NOTHING
 """)
 
 artists_table_insert = ("""
 INSERT INTO artists (artist_id, name, location, latitude, longitude)
 VALUES (%s, %s, %s, %s, %s)
-ON CONFLICT (artist_id) DO UPDATE SET
-location = EXCLUDED.location,
-latitude = EXCLUDED.latitude,
-longitude = EXCLUDED.longitude
+ON CONFLICT (artist_id) DO NOTHING
 """)
 
 times_table_insert = ("""
