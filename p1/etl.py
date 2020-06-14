@@ -85,7 +85,7 @@ def process_log_file(cur, filepath):
         songplay_data = (row.userId,
                          songid,
                          artistid,
-                         row.ts,
+                         pd.to_datetime(row.ts, unit='ms'),
                          row.sessionId,
                          row.level,
                          row.location,
