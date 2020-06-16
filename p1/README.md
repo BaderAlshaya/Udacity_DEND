@@ -34,7 +34,7 @@ They'd like us to create a Postgres database with tables designed to optimize qu
 
 Each song file is in `JSON` file format and contains metadata about a song and the artist of that song. The files are partitioned by the first three letters of each song's track ID.
 <br>**For instance:** `song_data/A/A/B/TRAABJL12903CDCF1A.json` looks like:
-
+```
     {"num_songs": 1,
     "artist_id": "ARHHO3O1187B989413",
     "artist_latitude": null,
@@ -45,6 +45,7 @@ Each song file is in `JSON` file format and contains metadata about a song and t
     "title": "Auguri Cha Cha",
     "duration": 191.84281,
     "year": 0}
+```
 
 **The Dataset After ETL Pipeline Transfer**
 
