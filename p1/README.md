@@ -1,5 +1,6 @@
 # Project 1: Data Modeling with Postgres
 
+&nbsp;
 
 ## Introduction
 A startup called Sparkify wants to analyze the data they've been collecting on songs and user activity on their new music streaming app. The analytics team is particularly interested in understanding what songs users are listening to. Currently, they don't have an easy way to query their data, which resides in a directory of JSON logs on user activity on the app, as well as a directory with JSON metadata on the songs in their app.
@@ -16,8 +17,8 @@ They'd like us to create a Postgres database with tables designed to optimize qu
 - We build an **ETL Pipeline** to transfer the date into these tables using `Python` and `SQL`.
 - We optimize queries and understand what songs users are listening to.
 - We finally test the database by comparing their given expected results with our own query results.
-<br>
 
+&nbsp;
 
 **Files:**
 - (Text) **`requirements.txt`**: Populate project's required packages.
@@ -26,8 +27,8 @@ They'd like us to create a Postgres database with tables designed to optimize qu
 - (Python) **`etl.py`**: Transfers the data from the JSON files to the target database.
 - (Jupyter Notebook) **`etl.ipynb`**: Analyse dataset before loading it to the database.
 - (Jupyter Notebook) **`test.ipynb`**: Test loaded data against expected data to validate the transformation.
-<br>
 
+&nbsp;
 
 **Data:**
 - Song Dataset: 
