@@ -8,8 +8,7 @@ They'd like us to create a Postgres database with tables designed to optimize qu
 
 
 ## Project Description
-**Requirements:**
-- We collect the data for user activity from a music streaming app called **Sparkify** in `JSON` file format.
+**Requirements:**- We collect the data for user activity from a music streaming app called **Sparkify** in `JSON` file format.
 - We creat a **Relational Database** to store the data using `PostgreSQL`. 
 - We define **Fact** and **Dimension** tables for a **Star Schema** with a particular analytic focus. 
 - We build an **ETL Pipeline** to transfer the date into these tables using `Python` and `SQL`.
@@ -82,6 +81,8 @@ Using the **ETL Pipline** method, the data gets transferred from two data sets `
 - *Load:* where the data gets loaded to the target database.
 
 **The design for the database is the following Star Schema:**
+
+
 ![Star Schema Design](https://github.com/BaderAlshaya/Udacity_DEND/blob/master/p1/assets/images/StarSchemaDesign.png?raw=true)
 
 
