@@ -104,9 +104,9 @@ To build the project (Mac OS):
 
 
 ## Run
-To run the project:
-- Run python3 create_tables.py 
-- Run python3 etl.py
+Follow the steps below to compile and run the project with Terminal:
+- Run `python3 create_tables.py `
+- Run `python3 etl.py`
 <br><br>
 
 
