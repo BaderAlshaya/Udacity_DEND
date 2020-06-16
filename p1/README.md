@@ -111,7 +111,7 @@ Follow the steps below to compile and run the project with Terminal:
 
 
 ## Test Result
-The test results are provided in the following notebook files:
+The test results are provided in the following Jupyter notebook files:
 - `etl.ipynb`
 - `test.ipynb`
 <br><br>
