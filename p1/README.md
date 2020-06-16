@@ -8,6 +8,7 @@ They'd like us to create a Postgres database with tables designed to optimize qu
 
 
 
+
 ## Project Description
 **Requirements:**
 - We collect the data for user activity from a music streaming app called **Sparkify** in `JSON` file format.
