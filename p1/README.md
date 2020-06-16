@@ -82,7 +82,7 @@ Using the **ETL Pipline** method, the data gets transferred from two data sets `
 - *Load:* where the data gets loaded to the target database.
 
 **The design for the database is the following Star Schema:**
-&nbsp;&nbsp;&nbsp;![Star Schema Design](https://github.com/BaderAlshaya/Udacity_DEND/blob/master/p1/assets/images/StarSchemaDesign.png?raw=true)
+![Star Schema Design](https://github.com/BaderAlshaya/Udacity_DEND/blob/master/p1/assets/images/StarSchemaDesign.png?raw=true){: .callout}
 
 
 
