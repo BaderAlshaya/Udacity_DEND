@@ -97,8 +97,11 @@ To build the project (Mac OS):
 - Install postgres (PostgreSQL 12.3 or above).
 - Open the terminal and run the following commands to create and run the databases locally:
     &nbsp;&nbsp;&nbsp;**- Run the PostgresSQL shell:** `psql`
+
     &nbsp;&nbsp;&nbsp;**- Create the database owner:** `CREATE ROLE student WITH LOGIN PASSWORD 'student' CREATEDB CREATEROLE;`
+    
     &nbsp;&nbsp;&nbsp;**- Quit the PostgresSQL shell:** `\q`
+    
     &nbsp;&nbsp;&nbsp;**- Create a default database:** `createdb -O student -h 127.0.0.1 -e studentdb`
 
 
