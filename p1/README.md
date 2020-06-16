@@ -39,7 +39,6 @@ Each song file is in `JSON` file format and contains metadata about a song and t
 &nbsp;
 
 **For instance:** `song_data/A/A/B/TRAABJL12903CDCF1A.json` looks like:
-
 ```json
     {"num_songs": 1,
     "artist_id": "ARHHO3O1187B989413",
