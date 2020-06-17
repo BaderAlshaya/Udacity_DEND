@@ -33,7 +33,7 @@ They'd like us to create a Postgres database with tables designed to optimize qu
 **Data:**
 &nbsp;
 
-1. *Song Dataset:
+1. **Song Dataset:**
 
 Each song file is in `JSON` file format and contains metadata about a song and the artist of that song. The files are partitioned by the first three letters of each song's track ID.
 &nbsp;
