@@ -6,8 +6,6 @@ Learn to design data models, build data warehouses and data lakes, automate data
 ## Part 1: Data Modeling
 Learn to create relational and NoSQL data models to fit the diverse needs of data consumers. Use ETL to build databases in PostgreSQL and Apache Cassandra.
 
-&nbsp;
-[**p1: Data Modeling with Postgres**](https://github.com/BaderAlshaya/Udacity_DEND/tree/master/p1)
 
 
 &nbsp;
