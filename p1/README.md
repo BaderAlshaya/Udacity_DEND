@@ -94,7 +94,7 @@ Using the **ETL Pipline** method, the data gets transferred from two data sets `
 - *Transform:* where the data gets transformed into a transferable data type.
 - *Load:* where the data gets loaded to the target database.
 
-**The design for the database is the following Star Schema:**
+**The database design is the following Star Schema:**
 
 &nbsp;
 
