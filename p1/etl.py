@@ -5,6 +5,17 @@ import pandas as pd
 from sql_queries import *
 
 
+"""
+Processes the JSON files for song metadata using ETL Pipeline
+
+Steps:
+1. Reads songs metadata from a local JSON file
+2. Inserts the metadata into artists and songs tables
+
+Keyword arguments:
+cur -- the database connected cursor
+filepath -- the song JSON files path
+"""
 def process_song_file(cur, filepath):
     # open song file
     df = pd.read_json(filepath, lines=True)
@@ -26,6 +37,18 @@ def process_song_file(cur, filepath):
     cur.execute(songs_table_insert, song_data)
 
 
+"""
+Processes the JSON files for log metadata using ETL Pipeline
+
+Steps:
+1. Reads logs metadata from a local JSON file
+2. Filters logs by NextSong page action
+3. Inserts the metadata into times, users and song_plays tables
+
+Keyword arguments:
+cur -- the database connected cursor
+filepath -- the log JSON files path
+"""
 def process_log_file(cur, filepath):
     # open log file
     df = pd.read_json(filepath, lines=True)
@@ -93,6 +116,20 @@ def process_log_file(cur, filepath):
         cur.execute(song_plays_table_insert, songplay_data)
 
 
+"""
+Collects the song and log JSON files and execute their processing functions
+
+Steps:
+1. Locates the json files path and append them in one list
+2. Iterates over each JSON file and call its processing function
+3. Print the number and the processing result of each JSON file
+
+Keyword arguments:
+cur -- the database connected cursor
+con -- the connection to database
+filepath -- the JSON file path
+func -- the processing function
+"""
 def process_data(cur, conn, filepath, func):
     # get all files matching extension from directory
     all_files = []
