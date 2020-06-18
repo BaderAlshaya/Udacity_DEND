@@ -8,8 +8,8 @@ Learn to create relational and NoSQL data models to fit the diverse needs of dat
 
 &nbsp;
 [**p1: Data Modeling with Postgres**](https://github.com/BaderAlshaya/Udacity_DEND/tree/master/p1)
-&nbsp;
 
+&nbsp;
 [**p2: Data Modeling with Apache Cassandra**](https://github.com/BaderAlshaya/Udacity_DEND/tree/master/p2)
 
 &nbsp;
