@@ -27,6 +27,7 @@ The *user activity* data is in a directory of JSON logs and the *songs data* is 
 - (Python) **`etl.py`**: Transfers the data from the JSON files to the target database.
 - (Jupyter Notebook) **`etl.ipynb`**: Analyse dataset before loading it to the database.
 - (Jupyter Notebook) **`test.ipynb`**: Test loaded data against expected data to validate the transformation.
+- (Jupyter Notebook) **`Project_1B_ Project_Template.ipynb`**: NANANANANANANANANANANANANANANANANANANANANANANA.
 
 &nbsp;
 
