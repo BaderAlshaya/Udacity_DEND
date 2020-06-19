@@ -12,7 +12,7 @@ The *user activity* data is in a directory of JSON logs and the *songs data* is 
 ## Project Description
 **Requirements:**
 - We collect the data for user activity from a music streaming app called **Sparkify** in `JSON` file format.
-- We creat a **Relational Database** to store the data using `PostgreSQL`. 
+- We creat a **Non-Relational Database** to store the data using `Apache Cassandra`. 
 - We define **Fact** and **Dimension** tables for a **Star Schema** with a particular analytic focus. 
 - We build an **ETL Pipeline** to transfer the date into these tables using `Python` and `SQL`.
 - We optimize queries and understand what songs users are listening to.
@@ -112,10 +112,10 @@ To build the project (Mac OS):
 
 &nbsp;
 
-    &nbsp;&nbsp;&nbsp;**- Run the PostgresSQL shell:** `psql`
-    &nbsp;&nbsp;&nbsp;**- Create the database owner:** `CREATE ROLE student WITH LOGIN PASSWORD 'student' CREATEDB CREATEROLE;`
-    &nbsp;&nbsp;&nbsp;**- Quit the PostgresSQL shell:** `\q`
-    &nbsp;&nbsp;&nbsp;**- Create a default database:** `createdb -O student -h 127.0.0.1 -e studentdb`
+    &nbsp;&nbsp;&nbsp; **- Run the PostgresSQL shell:** `psql`
+    &nbsp;&nbsp;&nbsp; **- Create the database owner:** `CREATE ROLE student WITH LOGIN PASSWORD 'student' CREATEDB CREATEROLE;`
+    &nbsp;&nbsp;&nbsp; **- Quit the PostgresSQL shell:** `\q`
+    &nbsp;&nbsp;&nbsp; **- Create a default database:** `createdb -O student -h 127.0.0.1 -e studentdb`
 
 &nbsp;
 
