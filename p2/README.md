@@ -98,7 +98,7 @@ Using the **ETL Pipline** method, the data gets transferred from two data sets `
 
 &nbsp;
 
-![Star Schema Design](https://github.com/BaderAlshaya/Udacity_DEND/blob/master/p1/assets/images/StarSchemaDesign.png?raw=true)
+![Star Schema Design](https://github.com/BaderAlshaya/Udacity_DEND/blob/master/p2/assets/images/StarSchemaDesign.png?raw=true)
 
 &nbsp;
 
