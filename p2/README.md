@@ -112,10 +112,10 @@ To build the project (Mac OS):
 
 &nbsp;
 
-**- Run the PostgresSQL shell:** `psql`
-**- Create the database owner:** `CREATE ROLE student WITH LOGIN PASSWORD 'student' CREATEDB CREATEROLE;`
-**- Quit the PostgresSQL shell:** `\q`
-**- Create a default database:** `createdb -O student -h 127.0.0.1 -e studentdb`
+    &nbsp;&nbsp;&nbsp;**- Run the PostgresSQL shell:** `psql`
+    &nbsp;&nbsp;&nbsp;**- Create the database owner:** `CREATE ROLE student WITH LOGIN PASSWORD 'student' CREATEDB CREATEROLE;`
+    &nbsp;&nbsp;&nbsp;**- Quit the PostgresSQL shell:** `\q`
+    &nbsp;&nbsp;&nbsp;**- Create a default database:** `createdb -O student -h 127.0.0.1 -e studentdb`
 
 &nbsp;
 
