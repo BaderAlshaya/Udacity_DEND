@@ -34,7 +34,7 @@ Note that a part of the ETL pipeline that transfers the data has been provided i
 
 Each event data is in `CSV` file format and contains metadata about a song and the artist of that song. The files are partitioned by date. 
 
-**For instance:** 
+- For instance: 
 
 > `2018-11-01-events.csv`
 ```
