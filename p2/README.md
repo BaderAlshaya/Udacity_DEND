@@ -25,6 +25,7 @@ Note that a part of the ETL pipeline that transfers the data has been provided i
 **Files:**
 - (Jupyter Notebook) **`Project_1B_ Project_Template.ipynb`**: Analyse dataset before loading it to the database.
 
+&nbsp;
 
 **Data:**
 &nbsp;
