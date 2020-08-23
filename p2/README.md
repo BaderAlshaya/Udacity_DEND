@@ -7,7 +7,7 @@ A startup called Sparkify wants to analyze the data they've been collecting on s
 
 The *user activity* data is in a directory of CSV files. Therefore, they'd like us to create an Apache Cassandra database which can create queries on song play data to answer the questions. We decided to model the event data by creating tables in Apache Cassandra to run queries. 
 
-Note that a part of the ETL pipeline that transfers the data has been provided initially. The provided pipline transfers the event data from a set of CSV files within a directory by creating a streamlined CSV file to model and insert data into Apache Cassandra tables.
+Note that a part of the ETL pipeline that transfers the data has been provided initially. The provided pipline transfers the event data from a set of CSV files within a directory by creating a streamlined CSV file `event_datafile_new.csv` to model and insert data into Apache Cassandra tables.
 
 &nbsp;
 
@@ -23,7 +23,8 @@ Note that a part of the ETL pipeline that transfers the data has been provided i
 &nbsp;
 
 **Files:**
-- (Jupyter Notebook) **`Project_1B_ Project_Template.ipynb`**: Analyse dataset before loading it to the database.
+- (Jupyter Notebook) **`Project_1B_ Project_Template.ipynb`**: Create the Apache Cassandra database and transfer the data into tables.
+- (CSV File) **`event_datafile_new.csv`**: (Generated at compile time) Model and insert data into Apache Cassandra tables.
 
 &nbsp;
 
@@ -32,9 +33,10 @@ Note that a part of the ETL pipeline that transfers the data has been provided i
 
 1. Event Dataset:
 
-Each event data is in `CSV` file format and contains metadata about a song and the artist of that song. The files are partitioned by date. 
+Each event data is in `CSV` file format and contains metadata about a song and the artist of that song. The files are partitioned by date.
+&nbsp;
 
-- For instance: 
+**For instance:** 
 
 > `2018-11-01-events.csv`
 ```
