@@ -15,10 +15,10 @@ Note that a part of the ETL pipeline that transfers the data has been provided i
 **Requirements:**
 - We collect the data for user activity from a music streaming app called **Sparkify** in `CSV` file format.
 - We creat a **Non-Relational (NoSQL) Database** to store the data using `Apache Cassandra` tables. 
-- We process the `event_datafile_new.csv` dataset to create a denormalized dataset.
-- We use the part of the **ETL Pipeline** being provided to load the date into tables that we create in `Apache Cassandra`.
-- We create the database and run queries through `Project_1B_ Project_Template.ipynb`
-- We finally test the database by comparing the given expected results with our own generated results.
+- We generate and process `event_datafile_new.csv` file to model the denormalized dataset.
+- We use part of the **ETL Pipeline** being provided to load the date into tables that we create in `Apache Cassandra`.
+- We create the database and run queries through `Project_1B_Project_Template.ipynb`
+- We test the database by comparing the given expected results with our own generated results.
 
 &nbsp;
 
@@ -33,7 +33,8 @@ Note that a part of the ETL pipeline that transfers the data has been provided i
 
 1. Event Dataset:
 
-Each event data is in `CSV` file format and contains metadata about a song and the artist of that song. The files are partitioned by date.
+Each event data is in `CSV` file format and contains metadata about user interactions with the songs in the sparkify app. The files are partitioned by date.
+
 &nbsp;
 
 **For instance:** 
@@ -69,12 +70,13 @@ To build the project (Mac OS):
 
 ## Run
 Follow the steps below to compile and run the project:
-- Open the following file with Jupyter Notebook `Project_1B_ Project_Template.ipynb`
+- Open the following file with Jupyter Notebook `Project_1B_Project_Template.ipynb`
+- Run the Notebook cells in order
 
 &nbsp;
 
 ## Test Result
-To test the data modeling compare the generated results with a screenshot of expected results found in the following directory:
+To test the data modeling compare the generated results with the attached screenshot of expected results:
 - `./assets/images/image_event_datafile_new.jpg`
 
 &nbsp;
