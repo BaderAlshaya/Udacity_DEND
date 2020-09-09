@@ -3,21 +3,38 @@ import psycopg2
 from sql_queries import create_table_queries, drop_table_queries
 
 
-# Drop all tables
+"""Drop all existing tables
+
+Keyword arguments:
+cur -- the db cursor
+conn -- the db connection
+
+"""
 def drop_tables(cur, conn):
     for query in drop_table_queries:
         cur.execute(query)
         conn.commit()
 
         
-# Create all tables
+"""Create all tables
+
+Keyword arguments:
+cur -- the db cursor
+conn -- the db connection
+
+"""
 def create_tables(cur, conn):
     for query in create_table_queries:
         cur.execute(query)
         conn.commit()
 
 
-# Connct to database and create all the tables
+"""Connct to database and create all the tables
+
+Keyword arguments:
+NONE
+
+"""
 def main():
     config = configparser.ConfigParser()
     config.read('dwh.cfg')
