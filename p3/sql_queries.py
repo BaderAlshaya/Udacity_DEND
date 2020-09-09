@@ -120,19 +120,22 @@ time_table_create = ("""
 
 # STAGING TABLES
 staging_events_copy = ("""
-    COPY staging_events 
-    FROM {} 
-    iam_role {}
-    FORMAT AS JSON {};""").format(config.get('S3', 'LOG_DATA'),
-                                  config.get('IAM_ROLE', 'ARN'), 
-                                  config.get('S3', 'LOG_JSONPATH'))
+copy staging_events from {} 
+iam_role {}
+FORMAT AS JSON {};
+""").format(
+    config.get('S3', 'LOG_DATA'), 
+    config.get('IAM_ROLE', 'ARN'), 
+    config.get('S3', 'LOG_JSONPATH'))
+
 
 staging_songs_copy = ("""
-    COPY staging_songs 
-    FROM {} 
-    iam_role {}
-    FORMAT AS JSON 'auto';""").format(config.get('S3', 'SONG_DATA'), 
-                                      config.get('IAM_ROLE', 'ARN'))
+copy staging_songs from {} 
+iam_role {}
+FORMAT AS JSON 'auto';
+""").format(
+    config.get('S3', 'SONG_DATA'), 
+    config.get('IAM_ROLE', 'ARN'))
 
 
 # FINAL TABLES
