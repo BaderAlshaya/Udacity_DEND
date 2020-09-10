@@ -24,7 +24,8 @@ The data are pulled from three different sources and are distributed across fact
 The star schema is chosen as the data model because it is simple and yet effective. Users can write simple queries by joing fact and dimension tables to analyze the data.
 
 #### Schema Tables:
-A. Staging Tables
+- Staging Tables
+
     staging_i94_df
         id
         date
@@ -60,7 +61,8 @@ A. Staging Tables
         pct_white
         total_pop
 
-B. Dimension Tables
+- Dimension Tables
+
     immigrant_df
         id
         gender
@@ -97,7 +99,8 @@ B. Dimension Tables
         weekofyear
         month
 
-C. Fact Table
+- Fact Table
+
     immigration_df
         id
         state_code
