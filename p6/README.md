@@ -3,7 +3,7 @@
 &nbsp;
 
 ## Introduction
-The purpose of the data engineering capstone project is to give you a chance to combine what you've learned throughout the program. You'll define the scope of the project and the data you'll be working with. You'll gather data from several different data sources; transform, combine, and summarize it; and create a clean database for others to analyze.
+The purpose of the data engineering capstone project is to give you a chance to combine what we've learned throughout the Udacity DEND program. We'll define the scope of the project and the data we'll be working with. We'll gather data from several different data sources; transform, combine, and summarize it; and create a clean database for others to analyze.
 
 &nbsp;
 
