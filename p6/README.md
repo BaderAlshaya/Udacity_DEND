@@ -13,7 +13,7 @@ This project aims to be able to answers questions on US immigration such as what
 &nbsp;
 
 ## Data
-The data are pulled from **three** different sources and are distributed across fact and dimension tables to be able to do analysis on US immigration using factors of city monthly average temperature, city demographics and seasonality.
+The data are pulled from three different sources and are distributed across fact and dimension tables to be able to do analysis on US immigration using factors of city monthly average temperature, city demographics and seasonality.
 
 ### The Three Sources:
 1. I94 Immigration Data: comes from the U.S. National Tourism and Trade Office and contains various statistics on international visitor arrival in USA and comes from the US National Tourism and Trade Office. The dataset contains data from 2016. [link](https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data).
