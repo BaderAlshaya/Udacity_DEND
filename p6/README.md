@@ -61,7 +61,8 @@ The star schema is chosen as the data model because it is simple and yet effecti
         pct_white
         total_pop
 
-* Dimension Tables *
+
+*Dimension Tables*
 
     immigrant_df
         id
